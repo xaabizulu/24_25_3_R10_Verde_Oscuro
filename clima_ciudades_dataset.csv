@@ -1,16 +1,16 @@
 Ciudad,Mes,Temperatura_Media,Precipitacion_mm,Horas_Sol,Humedad_Relativa,Velocidad_Viento_kmh
 Madrid,Enero,5.0,100,100.0,60.0,5.0
 Barcelona,Enero,6.9,93,120.5,60.0,5.2
-Sevilla,Enero,8.8,86,141.0,60.0,5.5
-Valencia,Enero,10.8,79,161.5,60.0,5.8
-Bilbao,Enero,12.7,72,182.0,60.0,6.0
-Malaga,Enero,14.6,65,202.5,60.0,6.2
-Granada,Enero,16.5,58,223.0,60.0,6.5
-Zaragoza,Enero,18.4,51,243.5,60.0,6.8
-Toledo,Enero,20.3,44,264.0,60.0,7.0
-Santander,Enero,22.3,37,284.5,60.0,7.2
-Alicante,Enero,24.2,30,305.0,60.0,7.5
-Cordoba,Enero,26.1,23,325.5,60.0,7.8
+Sevilla,Enero,8.8,86,140.0,60.0,5.5
+Valencia,Enero,10.8,79,160.5,60.0,5.8
+Bilbao,Enero,12.7,72,180.0,60.0,6.0
+Malaga,Enero,14.6,65,200.5,60.0,6.2
+Granada,Enero,6.5,58,220.0,60.0,6.5
+Zaragoza,Enero,8.4,51,240.5,60.0,6.8
+Toledo,Enero,2.3,44,264.0,60.0,7.0
+Santander,Enero,12.3,37,284.5,60.0,7.2
+Alicante,Enero,14.2,30,305.0,60.0,7.5
+Cordoba,Enero,12.1,23,325.5,60.0,7.8
 La Coruña,Enero,6.2,112,106.0,66.0,8.0
 Valladolid,Enero,8.1,105,126.5,66.0,8.2
 Salamanca,Enero,10.0,98,147.0,66.0,8.5
@@ -19,223 +19,223 @@ Logroño,Enero,13.9,84,188.0,66.0,9.0
 Murcia,Enero,15.8,77,208.5,66.0,9.2
 Oviedo,Enero,17.7,70,229.0,66.0,9.5
 Palma de Mallorca,Enero,19.6,63,249.5,66.0,9.8
-Madrid,Febrero,19.5,36,260.0,56.0,5.0
-Barcelona,Febrero,21.5,29,280.5,56.0,5.2
-Sevilla,Febrero,23.4,22,301.0,56.0,5.5
-Valencia,Febrero,25.3,15,321.5,56.0,5.8
-Bilbao,Febrero,5.4,104,102.0,62.0,6.0
-Malaga,Febrero,7.3,97,122.5,62.0,6.2
-Granada,Febrero,9.2,90,143.0,62.0,6.5
-Zaragoza,Febrero,11.2,83,163.5,62.0,6.8
-Toledo,Febrero,13.1,76,184.0,62.0,7.0
-Santander,Febrero,15.0,69,204.5,62.0,7.2
-Alicante,Febrero,16.9,62,225.0,62.0,7.5
-Cordoba,Febrero,18.8,55,245.5,62.0,7.8
-La Coruña,Febrero,20.7,48,266.0,62.0,8.0
-Valladolid,Febrero,22.7,41,286.5,62.0,8.2
-Salamanca,Febrero,24.6,34,307.0,62.0,8.5
-Pamplona,Febrero,26.5,27,327.5,62.0,8.8
-Logroño,Febrero,6.6,116,108.0,68.0,9.0
-Murcia,Febrero,8.5,109,128.5,68.0,9.2
-Oviedo,Febrero,10.4,102,149.0,68.0,9.5
-Palma de Mallorca,Febrero,12.4,95,169.5,68.0,9.8
-Madrid,Marzo,12.3,68,180.0,58.0,5.0
-Barcelona,Marzo,14.2,61,200.5,58.0,5.2
-Sevilla,Marzo,16.1,54,221.0,58.0,5.5
-Valencia,Marzo,18.0,47,241.5,58.0,5.8
-Bilbao,Marzo,19.9,40,262.0,58.0,6.0
-Malaga,Marzo,21.9,33,282.5,58.0,6.2
-Granada,Marzo,23.8,26,303.0,58.0,6.5
-Zaragoza,Marzo,25.7,19,323.5,58.0,6.8
-Toledo,Marzo,5.8,108,104.0,64.0,7.0
-Santander,Marzo,7.7,101,124.5,64.0,7.2
-Alicante,Marzo,9.6,94,145.0,64.0,7.5
-Cordoba,Marzo,11.6,87,165.5,64.0,7.8
-La Coruña,Marzo,13.5,80,186.0,64.0,8.0
-Valladolid,Marzo,15.4,73,206.5,64.0,8.2
-Salamanca,Marzo,17.3,66,227.0,64.0,8.5
-Pamplona,Marzo,19.2,59,247.5,64.0,8.8
-Logroño,Marzo,21.1,52,268.0,64.0,9.0
-Murcia,Marzo,23.1,45,288.5,64.0,9.2
-Oviedo,Marzo,25.0,38,309.0,64.0,9.5
-Palma de Mallorca,Marzo,26.9,31,329.5,64.0,9.8
-Madrid,Abril,5.0,100,100.0,60.0,5.0
-Barcelona,Abril,6.9,93,120.5,60.0,5.2
-Sevilla,Abril,8.8,86,141.0,60.0,5.5
-Valencia,Abril,10.8,79,161.5,60.0,5.8
-Bilbao,Abril,12.7,72,182.0,60.0,6.0
-Malaga,Abril,14.6,65,202.5,60.0,6.2
-Granada,Abril,16.5,58,223.0,60.0,6.5
-Zaragoza,Abril,18.4,51,243.5,60.0,6.8
-Toledo,Abril,20.3,44,264.0,60.0,7.0
-Santander,Abril,22.3,37,284.5,60.0,7.2
-Alicante,Abril,24.2,30,305.0,60.0,7.5
-Cordoba,Abril,26.1,23,325.5,60.0,7.8
-La Coruña,Abril,6.2,112,106.0,66.0,8.0
-Valladolid,Abril,8.1,105,126.5,66.0,8.2
-Salamanca,Abril,10.0,98,147.0,66.0,8.5
-Pamplona,Abril,12.0,91,167.5,66.0,8.8
-Logroño,Abril,13.9,84,188.0,66.0,9.0
-Murcia,Abril,15.8,77,208.5,66.0,9.2
-Oviedo,Abril,17.7,70,229.0,66.0,9.5
-Palma de Mallorca,Abril,19.6,63,249.5,66.0,9.8
-Madrid,Mayo,19.5,36,260.0,56.0,5.0
-Barcelona,Mayo,21.5,29,280.5,56.0,5.2
-Sevilla,Mayo,23.4,22,301.0,56.0,5.5
-Valencia,Mayo,25.3,15,321.5,56.0,5.8
-Bilbao,Mayo,5.4,104,102.0,62.0,6.0
-Malaga,Mayo,7.3,97,122.5,62.0,6.2
-Granada,Mayo,9.2,90,143.0,62.0,6.5
-Zaragoza,Mayo,11.2,83,163.5,62.0,6.8
-Toledo,Mayo,13.1,76,184.0,62.0,7.0
-Santander,Mayo,15.0,69,204.5,62.0,7.2
-Alicante,Mayo,16.9,62,225.0,62.0,7.5
-Cordoba,Mayo,18.8,55,245.5,62.0,7.8
-La Coruña,Mayo,20.7,48,266.0,62.0,8.0
-Valladolid,Mayo,22.7,41,286.5,62.0,8.2
-Salamanca,Mayo,24.6,34,307.0,62.0,8.5
-Pamplona,Mayo,26.5,27,327.5,62.0,8.8
-Logroño,Mayo,6.6,116,108.0,68.0,9.0
-Murcia,Mayo,8.5,109,128.5,68.0,9.2
-Oviedo,Mayo,10.4,102,149.0,68.0,9.5
-Palma de Mallorca,Mayo,12.4,95,169.5,68.0,9.8
-Madrid,Junio,12.3,68,180.0,58.0,5.0
-Barcelona,Junio,14.2,61,200.5,58.0,5.2
-Sevilla,Junio,16.1,54,221.0,58.0,5.5
-Valencia,Junio,18.0,47,241.5,58.0,5.8
-Bilbao,Junio,19.9,40,262.0,58.0,6.0
-Malaga,Junio,21.9,33,282.5,58.0,6.2
-Granada,Junio,23.8,26,303.0,58.0,6.5
-Zaragoza,Junio,25.7,19,323.5,58.0,6.8
-Toledo,Junio,5.8,108,104.0,64.0,7.0
-Santander,Junio,7.7,101,124.5,64.0,7.2
-Alicante,Junio,9.6,94,145.0,64.0,7.5
-Cordoba,Junio,11.6,87,165.5,64.0,7.8
-La Coruña,Junio,13.5,80,186.0,64.0,8.0
-Valladolid,Junio,15.4,73,206.5,64.0,8.2
-Salamanca,Junio,17.3,66,227.0,64.0,8.5
-Pamplona,Junio,19.2,59,247.5,64.0,8.8
-Logroño,Junio,21.1,52,268.0,64.0,9.0
-Murcia,Junio,23.1,45,288.5,64.0,9.2
-Oviedo,Junio,25.0,38,309.0,64.0,9.5
-Palma de Mallorca,Junio,26.9,31,329.5,64.0,9.8
-Madrid,Julio,5.0,100,100.0,60.0,5.0
-Barcelona,Julio,6.9,93,120.5,60.0,5.2
-Sevilla,Julio,8.8,86,141.0,60.0,5.5
-Valencia,Julio,10.8,79,161.5,60.0,5.8
-Bilbao,Julio,12.7,72,182.0,60.0,6.0
-Malaga,Julio,14.6,65,202.5,60.0,6.2
-Granada,Julio,16.5,58,223.0,60.0,6.5
-Zaragoza,Julio,18.4,51,243.5,60.0,6.8
-Toledo,Julio,20.3,44,264.0,60.0,7.0
-Santander,Julio,22.3,37,284.5,60.0,7.2
-Alicante,Julio,24.2,30,305.0,60.0,7.5
-Cordoba,Julio,26.1,23,325.5,60.0,7.8
-La Coruña,Julio,6.2,112,106.0,66.0,8.0
-Valladolid,Julio,8.1,105,126.5,66.0,8.2
-Salamanca,Julio,10.0,98,147.0,66.0,8.5
-Pamplona,Julio,12.0,91,167.5,66.0,8.8
-Logroño,Julio,13.9,84,188.0,66.0,9.0
-Murcia,Julio,15.8,77,208.5,66.0,9.2
-Oviedo,Julio,17.7,70,229.0,66.0,9.5
-Palma de Mallorca,Julio,19.6,63,249.5,66.0,9.8
-Madrid,Agosto,19.5,36,260.0,56.0,5.0
-Barcelona,Agosto,21.5,29,280.5,56.0,5.2
-Sevilla,Agosto,23.4,22,301.0,56.0,5.5
-Valencia,Agosto,25.3,15,321.5,56.0,5.8
-Bilbao,Agosto,5.4,104,102.0,62.0,6.0
-Malaga,Agosto,7.3,97,122.5,62.0,6.2
-Granada,Agosto,9.2,90,143.0,62.0,6.5
-Zaragoza,Agosto,11.2,83,163.5,62.0,6.8
-Toledo,Agosto,13.1,76,184.0,62.0,7.0
-Santander,Agosto,15.0,69,204.5,62.0,7.2
-Alicante,Agosto,16.9,62,225.0,62.0,7.5
-Cordoba,Agosto,18.8,55,245.5,62.0,7.8
-La Coruña,Agosto,20.7,48,266.0,62.0,8.0
-Valladolid,Agosto,22.7,41,286.5,62.0,8.2
-Salamanca,Agosto,24.6,34,307.0,62.0,8.5
-Pamplona,Agosto,26.5,27,327.5,62.0,8.8
-Logroño,Agosto,6.6,116,108.0,68.0,9.0
-Murcia,Agosto,8.5,109,128.5,68.0,9.2
-Oviedo,Agosto,10.4,102,149.0,68.0,9.5
-Palma de Mallorca,Agosto,12.4,95,169.5,68.0,9.8
-Madrid,Septiembre,12.3,68,180.0,58.0,5.0
-Barcelona,Septiembre,14.2,61,200.5,58.0,5.2
-Sevilla,Septiembre,16.1,54,221.0,58.0,5.5
-Valencia,Septiembre,18.0,47,241.5,58.0,5.8
-Bilbao,Septiembre,19.9,40,262.0,58.0,6.0
-Malaga,Septiembre,21.9,33,282.5,58.0,6.2
-Granada,Septiembre,23.8,26,303.0,58.0,6.5
-Zaragoza,Septiembre,25.7,19,323.5,58.0,6.8
-Toledo,Septiembre,5.8,108,104.0,64.0,7.0
-Santander,Septiembre,7.7,101,124.5,64.0,7.2
-Alicante,Septiembre,9.6,94,145.0,64.0,7.5
-Cordoba,Septiembre,11.6,87,165.5,64.0,7.8
-La Coruña,Septiembre,13.5,80,186.0,64.0,8.0
-Valladolid,Septiembre,15.4,73,206.5,64.0,8.2
-Salamanca,Septiembre,17.3,66,227.0,64.0,8.5
-Pamplona,Septiembre,19.2,59,247.5,64.0,8.8
-Logroño,Septiembre,21.1,52,268.0,64.0,9.0
-Murcia,Septiembre,23.1,45,288.5,64.0,9.2
-Oviedo,Septiembre,25.0,38,309.0,64.0,9.5
-Palma de Mallorca,Septiembre,26.9,31,329.5,64.0,9.8
-Madrid,Octubre,5.0,100,100.0,60.0,5.0
-Barcelona,Octubre,6.9,93,120.5,60.0,5.2
-Sevilla,Octubre,8.8,86,141.0,60.0,5.5
-Valencia,Octubre,10.8,79,161.5,60.0,5.8
-Bilbao,Octubre,12.7,72,182.0,60.0,6.0
-Malaga,Octubre,14.6,65,202.5,60.0,6.2
-Granada,Octubre,16.5,58,223.0,60.0,6.5
-Zaragoza,Octubre,18.4,51,243.5,60.0,6.8
-Toledo,Octubre,20.3,44,264.0,60.0,7.0
-Santander,Octubre,22.3,37,284.5,60.0,7.2
-Alicante,Octubre,24.2,30,305.0,60.0,7.5
-Cordoba,Octubre,26.1,23,325.5,60.0,7.8
-La Coruña,Octubre,6.2,112,106.0,66.0,8.0
-Valladolid,Octubre,8.1,105,126.5,66.0,8.2
-Salamanca,Octubre,10.0,98,147.0,66.0,8.5
-Pamplona,Octubre,12.0,91,167.5,66.0,8.8
-Logroño,Octubre,13.9,84,188.0,66.0,9.0
-Murcia,Octubre,15.8,77,208.5,66.0,9.2
-Oviedo,Octubre,17.7,70,229.0,66.0,9.5
-Palma de Mallorca,Octubre,19.6,63,249.5,66.0,9.8
-Madrid,Noviembre,19.5,36,260.0,56.0,5.0
-Barcelona,Noviembre,21.5,29,280.5,56.0,5.2
-Sevilla,Noviembre,23.4,22,301.0,56.0,5.5
-Valencia,Noviembre,25.3,15,321.5,56.0,5.8
-Bilbao,Noviembre,5.4,104,102.0,62.0,6.0
-Malaga,Noviembre,7.3,97,122.5,62.0,6.2
-Granada,Noviembre,9.2,90,143.0,62.0,6.5
-Zaragoza,Noviembre,11.2,83,163.5,62.0,6.8
-Toledo,Noviembre,13.1,76,184.0,62.0,7.0
-Santander,Noviembre,15.0,69,204.5,62.0,7.2
-Alicante,Noviembre,16.9,62,225.0,62.0,7.5
-Cordoba,Noviembre,18.8,55,245.5,62.0,7.8
-La Coruña,Noviembre,20.7,48,266.0,62.0,8.0
-Valladolid,Noviembre,22.7,41,286.5,62.0,8.2
-Salamanca,Noviembre,24.6,34,307.0,62.0,8.5
-Pamplona,Noviembre,26.5,27,327.5,62.0,8.8
-Logroño,Noviembre,6.6,116,108.0,68.0,9.0
-Murcia,Noviembre,8.5,109,128.5,68.0,9.2
-Oviedo,Noviembre,10.4,102,149.0,68.0,9.5
-Palma de Mallorca,Noviembre,12.4,95,169.5,68.0,9.8
-Madrid,Diciembre,12.3,68,180.0,58.0,5.0
-Barcelona,Diciembre,14.2,61,200.5,58.0,5.2
-Sevilla,Diciembre,16.1,54,221.0,58.0,5.5
-Valencia,Diciembre,18.0,47,241.5,58.0,5.8
-Bilbao,Diciembre,19.9,40,262.0,58.0,6.0
-Malaga,Diciembre,21.9,33,282.5,58.0,6.2
-Granada,Diciembre,23.8,26,303.0,58.0,6.5
-Zaragoza,Diciembre,25.7,19,323.5,58.0,6.8
-Toledo,Diciembre,5.8,108,104.0,64.0,7.0
-Santander,Diciembre,7.7,101,124.5,64.0,7.2
-Alicante,Diciembre,9.6,94,145.0,64.0,7.5
-Cordoba,Diciembre,11.6,87,165.5,64.0,7.8
-La Coruña,Diciembre,13.5,80,186.0,64.0,8.0
-Valladolid,Diciembre,15.4,73,206.5,64.0,8.2
-Salamanca,Diciembre,17.3,66,227.0,64.0,8.5
-Pamplona,Diciembre,19.2,59,247.5,64.0,8.8
-Logroño,Diciembre,21.1,52,268.0,64.0,9.0
-Murcia,Diciembre,23.1,45,288.5,64.0,9.2
-Oviedo,Diciembre,25.0,38,309.0,64.0,9.5
-Palma de Mallorca,Diciembre,26.9,31,329.5,64.0,9.8
+Madrid,Febrero,7.5,20.0,165.0,72.0,8.0
+Barcelona,Febrero,10.5,26.0,165.0,73.0,8.3
+Sevilla,Febrero,12.8,50.0,175.0,68.0,9.5
+Valencia,Febrero,12.3,18.0,180.0,70.0,6.3
+Bilbao,Febrero,9.2,120.0,115.0,80.0,8.0
+Málaga,Febrero,14.5,55.0,195.0,68.0,9.7
+Granada,Febrero,9.0,22.0,180.0,70.0,9.2
+Zaragoza,Febrero,8.0,12.0,165.0,70.0,14.5
+Toledo,Febrero,8.5,35.0,150.0,70.0,7.5
+Santander,Febrero,10.0,95.0,115.0,78.0,7.8
+Alicante,Febrero,12.0,15.0,195.0,68.0,7.2
+Córdoba,Febrero,11.8,28.0,170.0,65.0,7.8
+La Coruña,Febrero,10.5,110.0,90.0,82.0,9.3
+Valladolid,Febrero,5.0,25.0,135.0,75.0,10.5
+Salamanca,Febrero,4.8,30.0,130.0,74.0,9.4
+Pamplona,Febrero,6.0,38.0,110.0,78.0,9.0
+Logroño,Febrero,6.5,28.0,120.0,72.0,8.5
+Murcia,Febrero,13.0,12.0,200.0,65.0,9.3
+Oviedo,Febrero,8.5,78.0,100.0,82.0,8.0
+Palma de Mallorca,Febrero,12.0,28.0,195.0,71.0,8.2
+Madrid,Marzo,10.5,25,170.0,4.0,67
+Barcelona,Marzo,10.9,43,155.5,6.5,74
+Sevilla,Marzo,15.0,50,211.0,9.0,62
+Valencia,Marzo,13.0,30,180.0,8.0,71
+Bilbao,Marzo,11.0,70,150.0,7.0,75
+Malaga,Marzo,14.5,30,192.0,8.5,70
+Granada,Marzo,14.5,40,206.5,7.0,68
+Zaragoza,Marzo,11.5,25,177.5,5.0,66
+Toledo,Marzo,11.5,20,189.0,5.0,65
+Santander,Marzo,11.0,50,158.0,6.0,72
+Alicante,Marzo,14.0,20,191.0,9.0,70
+Cordoba,Marzo,14.5,40,202.5,8.5,64
+La Coruña,Marzo,11.0,80,144.5,7.5,80
+Valladolid,Marzo,9.5,30,155.0,4.0,68
+Salamanca,Marzo,9.0,35,145.5,3.5,66
+Pamplona,Marzo,9.5,50,140.0,5.0,72
+Logroño,Marzo,10.0,40,151.0,5.0,70
+Murcia,Marzo,14.5,20,202.0,9.0,68
+Oviedo,Marzo,10.0,70,142.0,6.0,78
+Palma de Mallorca,Marzo,12.5,60,186.0,7.5,75
+Madrid,Abril,13.0,22,192.0,5.0,70
+Barcelona,Abril,14.5,35,185.5,7.5,74
+Sevilla,Abril,18.5,42,236.0,10.0,65
+Valencia,Abril,16.5,28,202.0,9.0,72
+Bilbao,Abril,14.0,55,177.0,8.0,76
+Malaga,Abril,16.0,25,222.0,10.0,71
+Granada,Abril,17.0,38,211.0,8.0,69
+Zaragoza,Abril,15.5,20,196.5,7.0,67
+Toledo,Abril,14.5,18,180.5,6.0,66
+Santander,Abril,13.5,45,165.5,7.5,73
+Alicante,Abril,17.5,22,213.0,10.0,70
+Cordoba,Abril,18.0,35,222.5,9.0,68
+La Coruña,Abril,14.5,60,165.0,8.5,77
+Valladolid,Abril,12.0,30,170.0,6.0,71
+Salamanca,Abril,12.5,32,170.5,5.5,70
+Pamplona,Abril,13.0,50,183.0,6.5,74
+Logroño,Abril,13.5,40,185.5,7.0,72
+Murcia,Abril,17.0,20,223.0,10.5,69
+Oviedo,Abril,12.0,50,165.5,7.0,78
+Palma de Mallorca,Abril,14.5,55,190.5,8.0,75
+Madrid,Mayo,16.5,15,211.0,7.5,72
+Barcelona,Mayo,17.5,20,202.0,9.0,74
+Sevilla,Mayo,22.0,35,263.0,13.0,60
+Valencia,Mayo,20.5,25,235.0,11.0,70
+Bilbao,Mayo,18.0,40,215.0,10.0,75
+Malaga,Mayo,20.0,18,247.0,12.0,72
+Granada,Mayo,21.0,28,252.5,11.5,71
+Zaragoza,Mayo,20.0,15,223.5,10.0,69
+Toledo,Mayo,19.5,12,214.5,9.5,68
+Santander,Mayo,17.0,30,192.0,9.0,73
+Alicante,Mayo,21.5,18,245.5,12.5,71
+Cordoba,Mayo,22.5,30,255.0,12.0,69
+La Coruña,Mayo,17.0,45,186.0,10.5,76
+Valladolid,Mayo,15.0,25,197.0,8.5,72
+Salamanca,Mayo,15.5,28,191.5,8.0,71
+Pamplona,Mayo,16.0,38,202.0,9.0,74
+Logroño,Mayo,16.5,30,205.5,9.0,72
+Murcia,Mayo,21.0,15,257.0,13.5,69
+Oviedo,Mayo,15.0,45,198.5,9.0,77
+Palma de Mallorca,Mayo,18.5,35,222.0,10.5,74
+Madrid,Junio,20.5,5,261.0,12.0,74
+Barcelona,Junio,21.5,10,252.0,14.0,76
+Sevilla,Junio,27.0,15,322.0,17.0,55
+Valencia,Junio,25.0,12,294.0,15.5,65
+Bilbao,Junio,22.0,20,258.5,13.0,75
+Malaga,Junio,24.5,10,289.5,16.0,73
+Granada,Junio,26.0,18,312.0,17.5,72
+Zaragoza,Junio,25.0,8,293.0,14.5,70
+Toledo,Junio,24.0,5,273.0,13.0,68
+Santander,Junio,21.0,18,234.0,12.0,74
+Alicante,Junio,26.0,12,305.0,16.0,71
+Cordoba,Junio,28.5,15,336.5,18.0,65
+La Coruña,Junio,20.0,30,226.5,12.0,77
+Valladolid,Junio,19.5,10,237.0,11.5,74
+Salamanca,Junio,20.0,12,248.0,11.0,73
+Pamplona,Junio,21.0,18,255.0,12.5,75
+Logroño,Junio,21.5,15,267.0,13.0,72
+Murcia,Junio,27.0,10,328.0,18.0,66
+Oviedo,Junio,19.5,25,224.0,11.0,78
+Palma de Mallorca,Junio,22.5,15,277.0,13.5,74
+Madrid,Julio,25.0,0,325.5,18.0,75
+Barcelona,Julio,26.0,3,317.0,19.0,77
+Sevilla,Julio,32.0,0,385.0,21.0,50
+Valencia,Julio,30.0,0,346.0,20.0,60
+Bilbao,Julio,27.0,10,328.0,19.0,72
+Malaga,Julio,28.5,5,355.0,20.0,70
+Granada,Julio,33.0,0,385.5,22.0,66
+Zaragoza,Julio,31.0,2,367.0,21.0,64
+Toledo,Julio,30.5,0,351.5,20.5,62
+Santander,Julio,25.5,8,302.0,18.0,74
+Alicante,Julio,29.0,0,333.0,21.0,68
+Cordoba,Julio,35.0,0,414.0,23.0,55
+La Coruña,Julio,22.0,15,275.5,17.0,76
+Valladolid,Julio,23.5,5,296.0,16.5,72
+Salamanca,Julio,24.0,3,302.0,17.0,71
+Pamplona,Julio,26.5,7,314.0,18.5,73
+Logroño,Julio,26.0,6,309.5,18.0,70
+Murcia,Julio,33.0,0,398.0,22.5,60
+Oviedo,Julio,22.5,12,277.0,17.5,78
+Palma de Mallorca,Julio,27.0,0,331.0,19.5,72
+Madrid,Agosto,30.0,0,362.5,22.0,74
+Barcelona,Agosto,29.5,5,343.5,21.5,76
+Sevilla,Agosto,35.0,0,414.5,23.0,50
+Valencia,Agosto,33.0,2,381.0,22.0,60
+Bilbao,Agosto,29.0,8,352.0,21.0,72
+Malaga,Agosto,30.5,3,375.0,22.0,70
+Granada,Agosto,36.0,0,425.0,23.5,65
+Zaragoza,Agosto,34.0,1,395.0,22.0,63
+Toledo,Agosto,33.5,0,385.5,22.0,61
+Santander,Agosto,27.5,12,325.0,20.0,74
+Alicante,Agosto,32.0,0,375.0,23.0,68
+Cordoba,Agosto,37.0,0,425.5,24.0,55
+La Coruña,Agosto,23.5,10,285.0,19.5,75
+Valladolid,Agosto,25.0,6,315.0,19.0,71
+Salamanca,Agosto,25.5,4,325.0,19.5,70
+Pamplona,Agosto,28.0,9,341.0,21.0,72
+Logroño,Agosto,27.5,7,332.0,20.5,70
+Murcia,Agosto,35.0,0,403.0,23.5,60
+Oviedo,Agosto,23.0,15,284.5,19.0,78
+Palma de Mallorca,Agosto,28.5,2,345.0,21.5,72
+Madrid,Septiembre,25.0,10,303.0,20.5,70
+Barcelona,Septiembre,25.5,15,284.0,22.0,73
+Sevilla,Septiembre,30.5,2,356.0,22.5,55
+Valencia,Septiembre,28.5,5,325.5,21.5,63
+Bilbao,Septiembre,26.0,20,308.0,20.0,74
+Malaga,Septiembre,27.0,10,339.0,21.5,69
+Granada,Septiembre,31.0,2,364.5,23.0,65
+Zaragoza,Septiembre,29.0,3,346.0,22.5,62
+Toledo,Septiembre,28.5,1,332.5,22.0,60
+Santander,Septiembre,24.0,18,281.0,19.5,72
+Alicante,Septiembre,29.0,2,343.5,22.5,67
+Cordoba,Septiembre,33.0,0,394.0,23.5,55
+La Coruña,Septiembre,22.5,25,275.0,19.0,74
+Valladolid,Septiembre,24.0,10,296.5,19.0,70
+Salamanca,Septiembre,24.5,8,307.5,19.5,69
+Pamplona,Septiembre,26.0,15,328.0,21.0,71
+Logroño,Septiembre,25.0,12,311.5,20.5,68
+Murcia,Septiembre,32.5,0,372.0,23.0,60
+Oviedo,Septiembre,21.5,20,262.0,18.5,76
+Palma de Mallorca,Septiembre,27.0,10,324.0,21.5,70
+Madrid,Octubre,18.0,30,242.0,14.0,66
+Barcelona,Octubre,19.5,20,224.5,16.5,70
+Sevilla,Octubre,24.5,15,284.0,17.5,57
+Valencia,Octubre,22.0,25,265.5,15.5,62
+Bilbao,Octubre,18.5,40,226.5,14.0,72
+Malaga,Octubre,21.5,20,277.5,16.5,67
+Granada,Octubre,23.0,12,288.5,17.0,63
+Zaragoza,Octubre,21.0,18,269.0,15.5,61
+Toledo,Octubre,20.5,10,250.5,16.0,60
+Santander,Octubre,16.0,60,221.0,12.5,74
+Alicante,Octubre,22.5,8,272.0,15.5,65
+Cordoba,Octubre,26.0,5,313.0,18.0,53
+La Coruña,Octubre,17.5,75,214.5,13.5,75
+Valladolid,Octubre,18.0,40,235.5,14.0,69
+Salamanca,Octubre,18.5,35,245.0,14.5,68
+Pamplona,Octubre,19.0,50,256.0,15.0,70
+Logroño,Octubre,18.5,45,235.0,14.5,67
+Murcia,Octubre,25.5,5,307.0,17.5,55
+Oviedo,Octubre,16.5,80,208.5,12.0,73
+Palma de Mallorca,Octubre,20.0,15,241.5,14.5,68
+Madrid,Noviembre,13.5,50,192.0,9.0,60
+Barcelona,Noviembre,14.0,45,183.0,10.5,64
+Sevilla,Noviembre,19.0,35,244.0,12.0,55
+Valencia,Noviembre,17.0,50,215.5,11.0,60
+Bilbao,Noviembre,13.0,70,186.0,9.0,69
+Malaga,Noviembre,16.0,40,227.0,11.5,65
+Granada,Noviembre,18.0,30,238.5,12.5,62
+Zaragoza,Noviembre,16.5,40,211.5,11.5,59
+Toledo,Noviembre,15.5,35,201.5,10.5,58
+Santander,Noviembre,12.5,80,172.5,9.0,72
+Alicante,Noviembre,17.5,25,212.0,11.0,62
+Cordoba,Noviembre,21.0,15,262.0,13.0,52
+La Coruña,Noviembre,12.0,85,163.5,8.0,74
+Valladolid,Noviembre,13.0,60,194.0,9.5,68
+Salamanca,Noviembre,13.5,55,195.5,10.0,66
+Pamplona,Noviembre,14.0,60,206.0,11.0,69
+Logroño,Noviembre,13.5,65,185.5,10.0,67
+Murcia,Noviembre,19.5,20,252.0,12.5,50
+Oviedo,Noviembre,11.5,90,152.5,7.5,70
+Palma de Mallorca,Noviembre,14.5,30,191.0,9.0,66
+Madrid,Diciembre,9.5,60,152.0,8.0,58
+Barcelona,Diciembre,10.0,55,143.5,9.5,62
+Sevilla,Diciembre,15.5,40,204.5,10.5,53
+Valencia,Diciembre,13.5,55,185.0,9.5,58
+Bilbao,Diciembre,10.5,75,136.5,8.5,68
+Malaga,Diciembre,12.5,50,172.5,9.5,63
+Granada,Diciembre,14.0,45,192.5,10.0,60
+Zaragoza,Diciembre,12.0,50,173.5,9.0,57
+Toledo,Diciembre,11.5,55,164.0,8.5,56
+Santander,Diciembre,9.0,80,135.0,7.5,70
+Alicante,Diciembre,13.0,30,186.0,9.0,61
+Cordoba,Diciembre,16.5,25,227.0,10.5,50
+La Coruña,Diciembre,9.5,85,128.0,7.0,73
+Valladolid,Diciembre,10.0,70,149.5,8.5,66
+Salamanca,Diciembre,10.5,65,151.0,9.0,64
+Pamplona,Diciembre,11.0,60,152.5,8.5,67
+Logroño,Diciembre,10.0,65,141.0,8.0,65
+Murcia,Diciembre,16.0,20,212.0,11.0,48
+Oviedo,Diciembre,8.5,90,111.5,6.5,72
+Palma de Mallorca,Diciembre,11.5,40,142.5,8.0,65
