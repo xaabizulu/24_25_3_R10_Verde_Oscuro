@@ -1,0 +1,366 @@
+/* Estilo global */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  color: #333;
+  background: linear-gradient(135deg, #eac5c5, #fb640d, #f75c24, #f8bea8);
+  background-size: 300% 300%;
+  animation: gradientAnimation 8s ease infinite; /* Animación dinámica del fondo */
+}
+
+/* Animación del degradado */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Estilos para el header */
+header {
+  background-color: #e63946;
+  margin-bottom: 20px;   /* Espacio debajo del header */
+  padding: 20px ;       /* Espaciado interno arriba y abajo */
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  border-radius: 20px;
+  margin: 0 30px; /* Margen externo a los lados */
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+header .banner {
+  background: linear-gradient(to right, #ff4d4d, #ff9999);
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+header .banner h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+header .banner p {
+  font-size: 1rem;
+  margin: 10px 0 0;
+}
+
+header:hover {
+  background-color: #d62828;
+  box-shadow: 0 4px 20px rgba(214, 40, 40, 0.5);
+}
+.page-description {
+  font-family: 'Roboto', sans-serif; /* Fuente moderna y profesional */
+  font-size: 1.8em; /* Tamaño destacado */
+  color: rgb(248, 246, 246); /* Rojo vibrante */
+  text-align: center; /* Centrar el texto */
+  text-shadow: 0 0 10px rgba(35, 6, 8, 0.8), 
+               0 0 20px rgba(215, 38, 56, 0.6), 
+               0 0 30px rgba(215, 38, 56, 0.4); /* Efecto de brillo */
+  margin: 10px auto; /* Espaciado uniforme */
+  padding: 0;
+  line-height: 1.6; /* Mejora de la legibilidad */
+  transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out; /* Suavidad en la interacción */
+}
+
+/* Animación para el logo */
+@keyframes glow {
+  from {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), 0 0 10px #b20fc1;
+  }
+  to {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), 0 0 20px #0c0c0c;
+  }
+}
+  .logo {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 2px;
+    animation: glow 2s infinite alternate; /* Animación de brillo */
+  }
+  
+  /* Estilos generales de las páginas */
+  .page {
+    padding: 20px;
+    display: none; /* Por defecto, las páginas estarán ocultas */
+  }
+
+/* Asegúrate de que el contenedor de los botones esté centrado */
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  /* Asegúrate de que los botones tengan un estilo adecuado */
+  .buttons button {
+    padding: 10px 15px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #e63946;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background: linear-gradient(45deg, #c549ca, #f700b5, #6c09c2);
+    transition: background 0.5s ease;
+    transform: scale(1.1); /* Agrandar el botón al pasar el ratón */
+}
+
+button:active {
+    transform: scale(1); /* Reducir tamaño al hacer clic */
+    background-color: #b71c1c;
+}
+  
+  #main-menu {
+    display: block; /* Muestra la página principal por defecto */
+  }
+
+
+/* Animación para los gráficos (fade in) */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+  /* Estilos para los gráficos */
+  #chart1, #chart2, #chart3 {
+    width: 600px;
+    height: 400px;
+    margin: 20px auto;
+    border: 3px solid #e63946; /* Borde con color */
+    border-radius: 15px; /* Esquinas redondeadas */
+    padding: 10px;
+    background: linear-gradient(to bottom, #f0f0f0, #e8e8e8); /* Fondo degradado */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Sombra elegante */
+    animation: fadeIn 0.8s ease-in-out; /* Animación al aparecer */
+  }
+
+button {
+  background-color: #e63946;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+/* Contenedor de botones centrados */
+#changeGraphButtons {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Espaciado entre los botones */
+  margin-top: 30px; /* Margen superior */
+}
+
+/* Estilo de los botones de cambio de gráfico */
+#changeGraphButtons button {
+  font-size: 12px; /* Tamaño de letra más grande */
+  font-weight: bold; /* Texto en negrita */
+  padding: 15px 25px; /* Mayor tamaño de botón */
+  border: none;
+  cursor: pointer;
+  border-radius: 25px; /* Bordes redondeados más marcados */
+  background-color: #db1111; /* Fondo color tomate */
+  color: #ffffff; /* Texto blanco */
+  text-transform: uppercase; /* Texto en mayúsculas */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Sombra grande y suave */
+  transition: all 0.4s ease; /* Transición suave para todos los efectos */
+}
+
+h1, h2 {
+  color: #e63946;
+}
+
+#page1 {
+  display: block;
+}
+
+/* Animación para los títulos (slide in) */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.page h2 {
+  font-size: 2em;
+  font-weight: bold;
+  color: #f8f7f7;
+  text-align: center;
+  margin-bottom: 20px;
+  animation: slideIn 0.8s ease-out; /* Animación de entrada */
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+  letter-spacing: 1px; /* Espaciado entre letras para un toque elegante */
+}
+
+.page h2:hover {
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5); /* Intensifica la sombra al pasar el ratón */
+  transform: scale(1.02); /* Ligero zoom para un efecto dinámico */
+  transition: all 0.3s ease; /* Transición suave al aplicar hover */
+}
+
+
+#chart1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#chart2 {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  background-color: #f4f4f4;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+#chart2 svg {
+  width: 90%; 
+  height: 80%; 
+}
+
+.bubble {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.bubble:hover {
+  transform: scale(1.1);
+}
+
+.tooltip {
+  position: absolute;
+  text-align: center;
+  width: auto;
+  padding: 5px;
+  font-size: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  border-radius: 4px;
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* Estilo para el selector de usuario */
+#selectorUsuarios {
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 16px;
+  color: black;
+  cursor: pointer;
+}
+
+#selectorUsuarios option {
+  color: #e63946;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+/* Estilo del gráfico */
+svg {
+  width: 100%;
+  height: 100%;
+}
+
+circle {
+  transition: all 0.3s ease;
+}
+
+circle:hover {
+  fill: #d62828;
+}
+
+.axis path, .axis line {
+  fill: none;
+  shape-rendering: crispEdges;
+}
+
+.axis text {
+  font-size: 12px;
+  fill: #e63946;
+}
+
+.axis path {
+  stroke: #e63946;
+}
+
+.axis line {
+  stroke: #e63946;
+}
+
+footer {
+  font-style: italic;
+}
+
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Ejes grafico 2 */
+.domain {
+  stroke: #333;
+  stroke-width: 1px;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  shape-rendering: crispEdges;
+}
+
+.axis text {
+  font-size: 12px;
+  fill: #333;
+}
+

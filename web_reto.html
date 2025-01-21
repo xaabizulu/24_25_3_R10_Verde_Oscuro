@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB Lookiero</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="web_reto.css">
+</head>
+<body>
+  <header id="main-header">
+    <div class="logo">Lookiero</div>
+    <div class="banner">
+      <h1>Descubre datos exclusivos de clientes y productos</h1>
+      <p>Explora patrones de comportamiento, tendencias de stock y más con gráficos interactivos</p>
+    </div>
+  </header>
+
+  <!-- Página principal -->
+  <div id="main-menu" class="page">
+    <h1 class="page-description">Explora los datos de clientes y prendas de Lookiero</h1>
+    <div class="buttons">
+      <button onclick="showPage('page1')">Información sobre Usuarios</button>
+      <button onclick="showPage('page2')">Información sobre productos</button>
+      <button onclick="showPage('page3')">Stock Productos</button>
+    </div>
+  </div>
+
+  <!-- Página 1 -->
+  <div id="page1" class="page" style="display: none;">
+    <h2>Gráfico 1: Tiempo de sesión por usuario</h2>
+    <select id="selectorUsuarios">
+      <option value="" disabled selected>Selecciona un usuario</option>
+    </select>
+    <div id="chart1"></div>
+    <button onclick="showPage('main-menu')">Volver al Menú</button>
+  </div>
+
+  <!-- Página 2 -->
+  <div id="page2" class="page" style="display: none;">
+    <h2>Gráfico 2: Información sobre productos</h2>
+    <div id="changeGraphButtons">
+      <button onclick="changeGraphType('scatter')">Scatter: Información productos</button>
+      <button onclick="changeGraphType('bar')">Barras: Media de precio según prenda</button>
+    </div>
+    <div id="chart2"></div>
+    <button onclick="showPage('main-menu')">Volver al Menú</button>
+  </div>
+
+  <!-- Página 3 -->
+  <div id="page3" class="page" style="display: none;">
+    <h2>Gráfico 3: Stock por talla</h2>
+    <div id="chart3"></div>
+    <button onclick="showPage('main-menu')">Volver al Menú</button>
+  </div>
+  
+ <!-- Scripts para cada gráfico -->
+ <script src="grafico1.js"></script> <!-- Aquí es el script para el gráfico 1 -->
+ <script src="grafico2.js"></script> <!-- Script para el gráfico 2 -->
+ <script src="grafico3.js"></script> <!-- Script para el gráfico 3 -->
+  <script src="web_reto.js"></script>
+</body>
+
+<footer>
+  <p>&copy; 2025 WEB Lookiero Grupo Verde Oscuro BDatA 3. Todos los derechos reservados.</p>
+</footer>
+
+</html>
