@@ -28,7 +28,8 @@ Este proyecto implementa una interfaz web interactiva para explorar datos relaci
      - Oculta las secciones no relevantes.
      - Muestra la página seleccionada.
      - Carga dinámicamente los gráficos correspondientes (`grafico1.js`, `grafico2.js`, `grafico3.js`).
-
+4. **`Lookiero-logo.png`**
+   - Necesario bajarse esta imagen para su carga en la página web
 ---
 
 ## **GRÁFICOS Y SCRIPTS ESPECÍFICOS**
@@ -43,12 +44,12 @@ Este proyecto implementa una interfaz web interactiva para explorar datos relaci
     - `event_timestamp`: Marca temporal de eventos.
     - `event_name`: Nombre del evento.
 - **Gráfico:** Burbuja dinámica con las siguientes características:
-  - Tamaño de la burbuja proporcional a la cantidad de eventos del usuario.
+  - Tamaño de la burbuja proporcional a la cantidad de clicks del usuario.
   - Interactividad:
     - Zoom y desplazamiento.
     - Tooltips que muestran detalles sobre el usuario.
 - **Elementos clave:**
-  - Selector de usuario para filtrar datos individuales y actualizar el gráfico dinámicamente.
+  - Selector de usuario para filtrar datos individuales que se muestran en pantalla.
 
 ---
 ### **`grafico2.js`**
