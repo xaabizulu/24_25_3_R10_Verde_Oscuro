@@ -166,7 +166,7 @@ function loadData() {
           .style('opacity', 0.9);
         tooltip
           .html(`<strong>Usuario:</strong> ${d.userId}<br>
-                 <strong>Eventos visistados en total:</strong> ${d.count}<br>
+                 <strong>Clicks en total:</strong> ${d.count}<br>
                  <strong>Última sección visitada en web:</strong> ${d.lastEvent}<br>
                  <strong>Tiempo total en la web:</strong> ${Math.floor(d.totalTime / 3600)}h ${Math.floor((d.totalTime % 3600) / 60)}m ${Math.floor(d.totalTime % 60)}s`)
           .style('left', (event.pageX + 10) + 'px')
@@ -209,7 +209,7 @@ function loadData() {
         .text(`Usuario ${userData.userId}`)
         .attr('class', 'user-card-title');
 
-    const roundedDuration = userData.formattedDuration;
+    const roundedDuration = `${Math.floor(userData.totalTime / 3600)}h ${Math.floor((userData.totalTime % 3600) / 60)}m ${Math.floor(userData.totalTime % 60)}s`;
 
     const infoList = card.append('ul').attr('class', 'user-card-info');
 
