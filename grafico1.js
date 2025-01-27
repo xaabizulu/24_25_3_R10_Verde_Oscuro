@@ -23,6 +23,7 @@ function loadData() {
       d.event_timestamp = new Date(d.event_timestamp);
     });
 
+    // Procesar estadísticas de usuario
     const userStats = d3.rollups(
       data,
       events => {
@@ -30,22 +31,36 @@ function loadData() {
         const totalDuration = d3.sum(sortedEvents.slice(1), (e, i) => 
           (e.event_timestamp - sortedEvents[i].event_timestamp) / 1000 
         );
+
+        // Contar eventos por tipo
+        const eventCounts = d3.rollup(
+          events,
+          v => v.length,
+          d => d.event_name
+        );
+
         return {
           count: events.length,
           lastEvent: sortedEvents[sortedEvents.length - 1].event_name,
-          totalDuration: totalDuration
+          totalDuration: totalDuration,
+          eventTypes: eventCounts,
+          events: sortedEvents
         };
       },
       d => d.user_id
     );
 
-    // Convierto el tiempo total a horas y minutos para q no sean muchisimos segundos
+    // Formatear duración
     userStats.forEach(d => {
       const totalSeconds = d[1].totalDuration;
       const hours = Math.floor(totalSeconds / 3600);
       const minutes = Math.floor((totalSeconds % 3600) / 60);
       const seconds = totalSeconds % 60;
-      d[1].formattedDuration = hours > 0 ? `${hours}h ${minutes}m` : minutes > 0 ? `${minutes}m ${seconds}s` : `${seconds}s`;
+      d[1].formattedDuration = hours > 0 ? 
+        `${hours}h ${minutes}m` : 
+        minutes > 0 ? 
+          `${minutes}m ${seconds}s` : 
+          `${seconds}s`;
     });
 
     const usersData = Array.from(userStats, ([userId, stats]) => ({
@@ -53,28 +68,27 @@ function loadData() {
       count: stats.count,
       lastEvent: stats.lastEvent,
       totalTime: stats.totalDuration,
-      formattedDuration: stats.formattedDuration
+      formattedDuration: stats.formattedDuration,
+      eventTypes: stats.eventTypes,
+      events: stats.events
     }));
 
-    // Añadir un contenedor para mostrar las métricas del usuario cuando filtro en el selector
-    const metricsContainer = d3.select("#chart1").append("div")
-      .attr("id", "userMetrics")
-      .style("display", "none")
-      .style("padding", "20px")
-      .style("background-color", "#f0f0f0")
-      .style("border", "1px solid #ddd")
-      .style("border-radius", "8px")
-      .style("margin-top", "20px");
-
-    // Llenar el selector con usuarios del dataset
     const selector = document.getElementById('selectorUsuarios');
-    selector.innerHTML = '<option value="">Seleccione un usuario</option>'; // Resetear opciones
+    selector.innerHTML = '<option value="">Ver todos los usuarios</option>';
     usersData.forEach(user => {
       const option = document.createElement('option');
       option.value = user.userId;
-      option.textContent = user.userId;
+      option.textContent = `Usuario ${user.userId}`;
       selector.appendChild(option);
     });
+
+    // Crear el contenedor principal
+    const mainContainer = d3.select("#chart1")
+      .html("")
+      .append("div")
+      .style("width", "100%")
+      .style("max-width", "800px")
+      .style("margin", "0 auto");
 
     drawBubbleChart(usersData);
 
@@ -83,25 +97,10 @@ function loadData() {
       const selectedUserId = this.value;
       const selectedUser = userStats.find(d => d[0] === selectedUserId);
 
-      if (selectedUser) {
-        // Mostrar las métricas del usuario
-        const metricsHtml = `
-          <h2>Métricas del Usuario: ${selectedUser[0]}</h2>
-          <p><strong>Eventos Totales:</strong> ${selectedUser[1].count}</p>
-          <p><strong>Último Evento:</strong> ${selectedUser[1].lastEvent}</p>
-          <p><strong>Tiempo Total:</strong> ${selectedUser[1].formattedDuration}</p>
-        `;
-        metricsContainer.html(metricsHtml).style("display", "block");
-
-        drawBubbleChart([{
-          userId: selectedUser[0],
-          count: selectedUser[1].count,
-          lastEvent: selectedUser[1].lastEvent,
-          totalTime: selectedUser[1].totalDuration,
-          formattedDuration: selectedUser[1].formattedDuration
-        }], true);
+      if (selectedUserId) {
+        const selectedUser = usersData.find(d => d.userId === selectedUserId);
+        drawUserInfoCard(selectedUser);
       } else {
-        metricsContainer.style("display", "none");
         drawBubbleChart(usersData);
       }
     });
@@ -199,8 +198,36 @@ function loadData() {
       }, 2000);
     }
   }
+  // funcion para cuando se selecciona un usuario
+  function drawUserInfoCard(userData) {
+    const container = d3.select('#chart1');
+    container.html(''); // Limpiar contenido previo
+
+    const card = container.append('div').attr('class', 'user-card');
+
+    card.append('h5')
+        .text(`Usuario ${userData.userId}`)
+        .attr('class', 'user-card-title');
+
+    const roundedDuration = userData.formattedDuration;
+
+    const infoList = card.append('ul').attr('class', 'user-card-info');
+
+    infoList.append('li').html(`<strong>Total clicks:</strong> ${userData.count}`);
+    infoList.append('li').html(`<strong>Tiempo total:</strong> ${roundedDuration}`);
+
+    card.append('div')
+        .attr('class', 'user-card-icon')
+        .append('img')
+        .attr('src', 'Lookiero-logo.png') // Enlace al icono de lookiero
+        .attr('alt', 'Icono decorativo');
+
+    card.append('div')
+        .attr('class', 'user-card-footer')
+        .text('Datos usuario anonimizados');
+}
   
-  // Llamar a la carga de datos al cargar la página
+  // Llamada a la carga de datos al cargar la página
   window.onload = function() {
     loadData();
   };

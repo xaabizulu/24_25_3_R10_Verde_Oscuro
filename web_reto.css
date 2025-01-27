@@ -336,6 +336,27 @@ h1, h2 {
   z-index: 10;
 }
 
+/*tooltip del ultimo grafico */
+.tooltip2 {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
+  color: #333; /* Texto oscuro */
+  font-family: Arial, sans-serif; /* Fuente legible */
+  font-size: 14px; /* Tamaño del texto */
+  padding: 10px; /* Espaciado interno */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0px 4px 8px rgba(136, 18, 18, 0.2); /* Sombra elegante */
+  pointer-events: none; /* Para que no interfiera con el mouse */
+  opacity: 0; /* Oculto por defecto */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+  transform: translateY(-10px); /* Posición inicial para animación */
+}
+
+.tooltip2.show {
+  opacity: 1; /* Mostrar tooltip */
+  transform: translateY(0); /* Animación hacia su posición final */
+}
+
 /* Estilo para el selector de usuario */
 #selectorUsuarios {
   padding: 10px;
@@ -418,4 +439,66 @@ footer p {
 .axis text {
   font-size: 12px;
   fill: #333;
+}
+
+/* Contenedor principal de la tarjeta */
+.user-card {
+  max-width: 400px;
+  padding: 20px;
+  margin: 0 auto;
+  background: linear-gradient(145deg, #ffffff, #f0f0f0);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1), -5px -5px 15px rgba(255, 255, 255, 0.7);
+  border-radius: 16px;
+  font-family: Arial, sans-serif;
+  color: #343a40;
+  overflow: hidden;
+  transition: all 0.3s ease; /* Transición para suavizar los cambios */
+}
+
+/* Efecto hover sobre la tarjeta */
+.user-card:hover {
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2), -5px -5px 30px rgba(255, 255, 255, 0.7);
+  transform: translateY(-5px); /* Desplazamiento ligero hacia arriba */
+}
+
+/* Título del usuario */
+.user-card-title {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  color: #dc3545;
+  transition: color 0.3s ease; /* Transición para el cambio de color */
+}
+
+/* Efecto hover sobre el título */
+.user-card:hover .user-card-title {
+  color: #ff6600; /* Cambia el color del título cuando el cursor esté sobre la tarjeta */
+}
+
+.user-card-info li {
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+
+/* Icono decorativo */
+.user-card-icon {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.user-card-icon img {
+  width: 100px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* Pie de página visual */
+.user-card-footer {
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+  background-color: #e9ecef;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: #6c757d;
 }

@@ -1,14 +1,23 @@
 d3.csv('https://raw.githubusercontent.com/xaabizulu/datos_visualizacion_reto10/refs/heads/main/prendas.csv').then(function(datosInventadosGrafico3) {
+  // Eliminar columna innecesaria
+  datosInventadosGrafico3.forEach(d => {
+    delete d['Unnamed: 0'];
+  });
+
+  console.log(datosInventadosGrafico3[0]); 
   d3.select("#chart3").selectAll("*").remove();
 
   const ordenTallas = ["XS", "S", "M", "L", "XL"];
   
-  const datosAgrupadosGrafico3 = Array.from(d3.group(datosInventadosGrafico3, d => d.Prenda), ([key, values]) => ({
-    key,
-    values,
-    count: values.length,
-    tallas: d3.rollup(values, v => v.length, d => d.Talla)
-  }));
+  const datosAgrupadosGrafico3 = Array.from(d3.group(datosInventadosGrafico3, d => d.Prenda), ([key, values]) => {
+    console.log(key, values);  // Verifica los valores agrupados
+    return {
+      key,
+      values,
+      count: values.length,
+      tallas: d3.rollup(values, v => v.length, d => d.Talla)  // Agrupar por Talla y contar
+    };
+  });
 
   const width = 800;
   const height = 800;
@@ -36,16 +45,9 @@ d3.csv('https://raw.githubusercontent.com/xaabizulu/datos_visualizacion_reto10/r
     .domain([0, d3.max(datosAgrupadosGrafico3, d => d.count)])
     .range([innerRadius, outerRadius]);
 
-  const tooltip = d3.select("body").append("div")
-    .attr("class", "tooltip")
-    .style("position", "absolute")
-    .style("background-color", "white")
-    .style("padding", "10px")
-    .style("border", "1px solid #ccc")
-    .style("border-radius", "5px")
-    .style("pointer-events", "none")
-    .style("opacity", 0);
-
+  const tooltip2 = d3.select("body").append("div")
+    .attr("class", "tooltip2")
+    
   const bars = chartGroup.append("g")
     .selectAll("g")
     .data(datosAgrupadosGrafico3)
@@ -78,21 +80,28 @@ d3.csv('https://raw.githubusercontent.com/xaabizulu/datos_visualizacion_reto10/r
         .attr("stroke", "white")
         .attr("stroke-width", 1)
         .on("mouseover", function(event, d) {
+          const item = d3.select(this).datum();  // Obtener el dato de la barra actual
+          console.log(item);
+          const talla = item.talla;  
+          const count = item.count;  
+        
           d3.select(this)
             .transition()
             .duration(200)
             .attr("opacity", 0.8)
             .attr("transform", "scale(1.05)");
-  
-          tooltip.transition()
+        
+          tooltip2.transition()
             .duration(200)
             .style("opacity", 0.9);
-  
-          tooltip.html(`
+        
+            tooltip2
+            .classed("show", true) // Añade la clase 'show'
+            .html(`
               <strong>Prenda:</strong> ${d.key}<br/>
               <strong>Talla:</strong> ${d.talla}<br/>
               <strong>Cantidad:</strong> ${d.count}
-          `)
+            `)
             .style("left", (event.pageX + 10) + "px")
             .style("top", (event.pageY - 28) + "px");
         })
@@ -103,7 +112,7 @@ d3.csv('https://raw.githubusercontent.com/xaabizulu/datos_visualizacion_reto10/r
             .attr("opacity", 1)
             .attr("transform", "scale(1)");
   
-          tooltip.transition()
+          tooltip2.transition()
             .duration(500)
             .style("opacity", 0);
         })
