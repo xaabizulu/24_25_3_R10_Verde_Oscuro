@@ -77,7 +77,6 @@ body {
 
 /* Estilos para el header */
 header {
-  /* background-color: #e63946; */
   margin-bottom: 20px;   
   padding: 20px ;       
   text-align: center;
@@ -125,6 +124,7 @@ header .banner p {
   transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out; 
 }
 
+/* Animaciones para el logo de lookiero */
 
 @keyframes glow {
   from {
@@ -134,15 +134,25 @@ header .banner p {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), 0 0 20px #0c0c0c;
   }
 }
-  .logo {
-    font-size: 2.5em;
-    font-weight: bold;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    letter-spacing: 2px;
-    animation: glow 2s infinite alternate; 
+
+@keyframes typing {
+  0% {
+    opacity: 0;
   }
-  
+  100% {
+    opacity: 1;
+  }
+}
+
+.logo {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  letter-spacing: 2px;
+  display: inline-block;
+  animation: glow 2s infinite alternate, typing 4s forwards;
+}
 
   .page {
     padding: 20px;
@@ -344,7 +354,6 @@ h1, h2 {
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
-/* Estilo del gráfico */
 svg {
   width: 100%;
   height: 100%;
@@ -392,11 +401,6 @@ footer {
 footer p {
   margin: 0;
   font-size: 14px;
-}
-
-/* Estilos generales */
-body {
-  font-family: Arial, sans-serif;
 }
 
 /* Ejes grafico 2 */

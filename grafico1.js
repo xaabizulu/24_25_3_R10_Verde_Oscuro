@@ -18,18 +18,17 @@ function loadData() {
       return;
     }
 
-    // Formatear event_timestamp como objetos Date
+    // Formatear event_timestamp con Date
     data.forEach(d => {
       d.event_timestamp = new Date(d.event_timestamp);
     });
 
-    // Calcular el último evento y tiempo total por usuario
     const userStats = d3.rollups(
       data,
       events => {
         const sortedEvents = events.sort((a, b) => a.event_timestamp - b.event_timestamp);
         const totalDuration = d3.sum(sortedEvents.slice(1), (e, i) => 
-          (e.event_timestamp - sortedEvents[i].event_timestamp) / 1000 // Duración en segundos
+          (e.event_timestamp - sortedEvents[i].event_timestamp) / 1000 
         );
         return {
           count: events.length,
@@ -40,7 +39,7 @@ function loadData() {
       d => d.user_id
     );
 
-    // Convertir el tiempo total a horas y minutos
+    // Convierto el tiempo total a horas y minutos para q no sean muchisimos segundos
     userStats.forEach(d => {
       const totalSeconds = d[1].totalDuration;
       const hours = Math.floor(totalSeconds / 3600);
@@ -57,7 +56,7 @@ function loadData() {
       formattedDuration: stats.formattedDuration
     }));
 
-    // Añadir un contenedor para mostrar las métricas del usuario
+    // Añadir un contenedor para mostrar las métricas del usuario cuando filtro en el selector
     const metricsContainer = d3.select("#chart1").append("div")
       .attr("id", "userMetrics")
       .style("display", "none")
@@ -67,7 +66,7 @@ function loadData() {
       .style("border-radius", "8px")
       .style("margin-top", "20px");
 
-    // Llenar el selector con usuarios
+    // Llenar el selector con usuarios del dataset
     const selector = document.getElementById('selectorUsuarios');
     selector.innerHTML = '<option value="">Seleccione un usuario</option>'; // Resetear opciones
     usersData.forEach(user => {
@@ -77,10 +76,9 @@ function loadData() {
       selector.appendChild(option);
     });
 
-    // Dibujar el gráfico inicial
     drawBubbleChart(usersData);
 
-    // Actualizar el gráfico al seleccionar un usuario
+    // actualizacion del gráfico al seleccionar un usuario
     selector.addEventListener('change', function() {
       const selectedUserId = this.value;
       const selectedUser = userStats.find(d => d[0] === selectedUserId);
@@ -114,7 +112,7 @@ function loadData() {
   // Función para dibujar el gráfico de burbujas
   function drawBubbleChart(data, isFiltered = false) {
     const container = d3.select('#chart1');
-    container.html(''); // Limpiar contenido previo
+    container.html(''); 
   
     const width = 800;
     const height = 500;
@@ -125,9 +123,9 @@ function loadData() {
       .attr('height', height)
       .call(
         d3.zoom()
-          .scaleExtent([0.5, 5]) // Límites de zoom
+          .scaleExtent([0.5, 5]) 
           .on('zoom', (event) => {
-            g.attr('transform', event.transform); // Aplicar zoom y pan
+            g.attr('transform', event.transform); 
           })
       );
   

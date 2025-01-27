@@ -1,4 +1,4 @@
-// Generación de datos aleatorios con atributos más detallados
+// Generación de datos aleatorios con atributos más detallados, se explica en README_VISU.md el por qué de esto
 const generateRandomData = () => {
     const categories = ["Camiseta", "Pantalón", "Abrigo", "Chaqueta", "Sudadera", "Falda"];
     const sizes = ["S", "M", "L", "XL"];
@@ -29,7 +29,7 @@ const generateRandomData = () => {
 const data = generateRandomData();
 
 
-// Calcular el precio medio por categoría
+// Calculo el precio medio por categoría
 const calculateAveragePriceByCategory = () => {
     const categories = Array.from(new Set(data.map(d => d.category)));
     return categories.map(category => {
@@ -41,12 +41,10 @@ const calculateAveragePriceByCategory = () => {
 
 const averageData = calculateAveragePriceByCategory();
 
-// Dimensiones y márgenes del gráfico
 const margin = { top: 20, right: 30, bottom: 40, left: 40 };
 const width = 500;
 const height = 270;
 
-// Crear el contenedor SVG
 const svg = d3.select("#chart2")
   .append("svg")
   .attr("width", width + margin.left + margin.right)
@@ -71,11 +69,11 @@ const color = d3.scaleOrdinal()
   .range(["#ff9999", "#ff6666", "#ff4d4d", "#ff3333", "#e60000", "#cc0000", "#990000"]);
 
 // Crear las interacciones para el gráfico de barras y de dispersión
-let currentGraphType = 'scatter'; // Por defecto, es un gráfico de dispersión
+let currentGraphType = 'scatter'; // Por defecto, es un gráfico de dispersión AL PRINCIPIo, luego se puede cambiar
 
 
 const drawChart = () => {
-  svg.selectAll("*").remove(); // Limpiar el gráfico antes de redibujarlo
+  svg.selectAll("*").remove(); // Limpio el gráfico antes de redibujarlo
 
   if (currentGraphType === 'scatter') {
     svg.selectAll(".dot")
@@ -166,11 +164,10 @@ const drawChart = () => {
       .style("padding", "5px")
       .style("pointer-events", "none");
     
-    // Función para cambiar el tipo de gráfico
+    // La Función para cambiar el tipo de gráfico
     const changeGraphType = (type) => {
       currentGraphType = type;
       drawChart();
     };
     
-    // Dibuja el gráfico inicialmente
     drawChart();
