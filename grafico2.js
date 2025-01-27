@@ -16,12 +16,12 @@ const generateRandomData = () => {
         return {
             id: i + 1,
             category,
-            price: Math.floor(Math.random() * 100) + 20, // Precios entre 20 y 120
+            price: Math.floor(Math.random() * 100) + 20, 
             size,
             season,
             color,
             fabric,
-            description: `${category} ${color} ${fabric} - Talla: ${size}` // Descripción detallada
+            description: `${category} ${color} ${fabric} - Talla: ${size}` 
         };
     });
 };
@@ -70,7 +70,6 @@ const color = d3.scaleOrdinal()
   .domain(data.map(d => d.category))
   .range(["#ff9999", "#ff6666", "#ff4d4d", "#ff3333", "#e60000", "#cc0000", "#990000"]);
 
-
 // Crear las interacciones para el gráfico de barras y de dispersión
 let currentGraphType = 'scatter'; // Por defecto, es un gráfico de dispersión
 
@@ -98,6 +97,14 @@ const drawChart = () => {
         d3.select(this).transition().duration(200).attr("r", 10);
         tooltip.style("opacity", 0);
       });
+      svg.append("text")
+      .attr("x", -height / 2) 
+      .attr("y", -margin.left + 10) 
+      .attr("transform", "rotate(-90)") 
+      .style("text-anchor", "middle")
+      .style("font-size", "12px")
+      .text("Precio ($)");
+
 
     // Ejes
     svg.append("g")
@@ -135,7 +142,14 @@ const drawChart = () => {
         svg.append("g")
           .attr("transform", `translate(0,${height})`)
           .call(d3.axisBottom(x));
-    
+          svg.append("text")
+          .attr("x", -height / 2) 
+          .attr("y", -margin.left + 10) 
+          .attr("transform", "rotate(-90)") 
+          .style("text-anchor", "middle")
+          .style("font-size", "12px")
+          .text("Precio ($)")
+
         svg.append("g")
           .call(d3.axisLeft(y));
       }

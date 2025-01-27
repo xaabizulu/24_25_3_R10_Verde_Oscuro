@@ -1,3 +1,42 @@
+/*/
+
+/* Estilos para pantallas de al menos 768px de ancho */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+    margin: 0 auto;
+  }
+}
+
+/* Estilos para pantallas de al menos 1024px de ancho */
+@media (min-width: 1024px) {
+  .container {
+    width: 960px;
+    margin: 0 auto;
+  }
+}
+
+/* Estilos para pantallas de menos de 768px de ancho */
+@media (max-width: 767px) {
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .top-banner {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .top-banner .lookiero-link {
+    margin: 10px 0 0 0;
+  }
+
+  body {
+    padding-top: 100px; /* Ajustar según la altura del banner */
+  }
+}
+
 /* Estilo global */
 body, html {
   margin: 0;
@@ -11,6 +50,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  padding-bottom: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,7 +59,7 @@ body {
   color: #333;
   background: linear-gradient(135deg, #eac5c5, #fb640d, #f75c24, #f8bea8);
   background-size: 300% 300%;
-  animation: gradientAnimation 8s ease infinite; /* Animación dinámica del fondo */
+  animation: gradientAnimation 8s ease infinite; 
 }
 
 /* Animación del degradado */
@@ -37,14 +77,14 @@ body {
 
 /* Estilos para el header */
 header {
-  background-color: #e63946;
-  margin-bottom: 20px;   /* Espacio debajo del header */
-  padding: 20px ;       /* Espaciado interno arriba y abajo */
+  /* background-color: #e63946; */
+  margin-bottom: 20px;   
+  padding: 20px ;       
   text-align: center;
   font-size: 24px;
   color: white;
   border-radius: 20px;
-  margin: 0 30px; /* Margen externo a los lados */
+  margin: 0 30px; 
   transition: background-color 0.3s, box-shadow 0.3s;
 }
 
@@ -53,7 +93,8 @@ header .banner {
   color: white;
   text-align: center;
   padding: 20px 10px;
-  border-radius: 5px;
+  border-radius: 15px;
+  margin-top: 20px;
   margin-bottom: 20px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
@@ -69,25 +110,22 @@ header .banner p {
   margin: 10px 0 0;
 }
 
-header:hover {
-  background-color: #d62828;
-  box-shadow: 0 4px 20px rgba(214, 40, 40, 0.5);
-}
+
 .page-description {
-  font-family: 'Roboto', sans-serif; /* Fuente moderna y profesional */
-  font-size: 1.8em; /* Tamaño destacado */
-  color: rgb(248, 246, 246); /* Rojo vibrante */
-  text-align: center; /* Centrar el texto */
+  font-family: 'Roboto', sans-serif; 
+  font-size: 1.8em; 
+  color: rgb(248, 246, 246);
+  text-align: center; 
   text-shadow: 0 0 10px rgba(35, 6, 8, 0.8), 
                0 0 20px rgba(215, 38, 56, 0.6), 
-               0 0 30px rgba(215, 38, 56, 0.4); /* Efecto de brillo */
-  margin: 10px auto; /* Espaciado uniforme */
+               0 0 30px rgba(215, 38, 56, 0.4); 
+  margin: 10px auto; 
   padding: 0;
-  line-height: 1.6; /* Mejora de la legibilidad */
-  transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out; /* Suavidad en la interacción */
+  line-height: 1.6; 
+  transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out; 
 }
 
-/* Animación para el logo */
+
 @keyframes glow {
   from {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), 0 0 10px #b20fc1;
@@ -102,23 +140,23 @@ header:hover {
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     letter-spacing: 2px;
-    animation: glow 2s infinite alternate; /* Animación de brillo */
+    animation: glow 2s infinite alternate; 
   }
   
-  /* Estilos generales de las páginas */
+
   .page {
     padding: 20px;
-    display: none; /* Por defecto, las páginas estarán ocultas */
+    display: none; 
   }
 
-/* Asegúrate de que el contenedor de los botones esté centrado */
+
 .buttons {
     display: flex;
     justify-content: center;
     margin-top: 20px;
   }
   
-  /* Asegúrate de que los botones tengan un estilo adecuado */
+  
   .buttons button {
     padding: 10px 15px;
     margin: 10px;
@@ -133,20 +171,20 @@ header:hover {
   button:hover {
     background: linear-gradient(45deg, #c549ca, #f700b5, #6c09c2);
     transition: background 0.5s ease;
-    transform: scale(1.1); /* Agrandar el botón al pasar el ratón */
+    transform: scale(1.1); 
 }
 
 button:active {
-    transform: scale(1); /* Reducir tamaño al hacer clic */
+    transform: scale(1);
     background-color: #b71c1c;
 }
   
   #main-menu {
-    display: block; /* Muestra la página principal por defecto */
+    display: block; 
   }
 
 
-/* Animación para los gráficos (fade in) */
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -158,17 +196,16 @@ button:active {
   }
 }
 
-  /* Estilos para los gráficos */
   #chart1, #chart2, #chart3 {
     width: 600px;
     height: 400px;
     margin: 20px auto;
-    border: 3px solid #e63946; /* Borde con color */
-    border-radius: 15px; /* Esquinas redondeadas */
+    border: 3px solid #e63946; 
+    border-radius: 15px; 
     padding: 10px;
-    background: linear-gradient(to bottom, #f0f0f0, #e8e8e8); /* Fondo degradado */
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Sombra elegante */
-    animation: fadeIn 0.8s ease-in-out; /* Animación al aparecer */
+    background: linear-gradient(to bottom, #f0f0f0, #e8e8e8); 
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.8s ease-in-out; 
   }
 
 button {
@@ -185,23 +222,23 @@ button {
 #changeGraphButtons {
   display: flex;
   justify-content: center;
-  gap: 20px; /* Espaciado entre los botones */
-  margin-top: 30px; /* Margen superior */
+  gap: 20px; 
+  margin-top: 30px; 
 }
 
 /* Estilo de los botones de cambio de gráfico */
 #changeGraphButtons button {
-  font-size: 12px; /* Tamaño de letra más grande */
-  font-weight: bold; /* Texto en negrita */
-  padding: 15px 25px; /* Mayor tamaño de botón */
+  font-size: 12px; 
+  font-weight: bold; 
+  padding: 15px 25px; 
   border: none;
   cursor: pointer;
-  border-radius: 25px; /* Bordes redondeados más marcados */
-  background-color: #db1111; /* Fondo color tomate */
-  color: #ffffff; /* Texto blanco */
-  text-transform: uppercase; /* Texto en mayúsculas */
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Sombra grande y suave */
-  transition: all 0.4s ease; /* Transición suave para todos los efectos */
+  border-radius: 25px; 
+  background-color: #db1111; 
+  color: #ffffff; 
+  text-transform: uppercase; 
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); 
+  transition: all 0.4s ease; 
 }
 
 h1, h2 {
@@ -230,15 +267,15 @@ h1, h2 {
   color: #f8f7f7;
   text-align: center;
   margin-bottom: 20px;
-  animation: slideIn 0.8s ease-out; /* Animación de entrada */
-  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); /* Sombra sutil */
-  letter-spacing: 1px; /* Espaciado entre letras para un toque elegante */
+  animation: slideIn 0.8s ease-out; 
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); 
+  letter-spacing: 1px; 
 }
 
 .page h2:hover {
-  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5); /* Intensifica la sombra al pasar el ratón */
-  transform: scale(1.02); /* Ligero zoom para un efecto dinámico */
-  transition: all 0.3s ease; /* Transición suave al aplicar hover */
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5); 
+  transform: scale(1.02); 
+  transition: all 0.3s ease; 
 }
 
 
@@ -301,6 +338,7 @@ h1, h2 {
   cursor: pointer;
 }
 
+
 #selectorUsuarios option {
   color: #e63946;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
@@ -338,8 +376,22 @@ circle:hover {
   stroke: #e63946;
 }
 
+/* Estilo para el footer */
 footer {
+  background-color: #e63946;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
   font-style: italic;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
 }
 
 /* Estilos generales */
@@ -363,4 +415,3 @@ body {
   font-size: 12px;
   fill: #333;
 }
-
