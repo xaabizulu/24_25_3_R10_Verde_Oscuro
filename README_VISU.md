@@ -75,7 +75,7 @@ Este proyecto implementa una interfaz web interactiva para explorar datos relaci
   - Cada tipo de prenda tiene un conjunto de barras que representan el stock por talla.
   - Interactividad:
     - Tooltips que muestran la cantidad de stock para cada prenda y talla.
-    - Rotación del gráfico para centrar elementos seleccionados.
+    - Rotación del gráfico para centrar elementos seleccionados mediante click.
 
 ---
 
