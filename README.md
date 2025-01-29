@@ -76,9 +76,10 @@ Incluye:
 - Archivos de la aplicación:  
   - `app_primera.py`  
   - `app_segunda.py`  
-- Archivos relacionados con respuestas de usuarios:  
+- Archivos relacionados con respuestas de combinaciones según equipo:  
   - `color_combinations_responses_user_1_2.csv`  
   - `color_combinations_responses_user_3_4.csv`
+  - `combinaciones_colores.csv` : merge de dos archivos anteriores
 
 ---
 
