@@ -20,7 +20,7 @@ d3.csv('https://raw.githubusercontent.com/xaabizulu/datos_visualizacion_reto10/r
   });
 
   const width = 800;
-  const height = 800;
+  const height = 750;
   const innerRadius = 80;
   const outerRadius = Math.min(width, height) / 2 - 60;
 
