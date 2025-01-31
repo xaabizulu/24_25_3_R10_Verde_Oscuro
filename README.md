@@ -85,14 +85,15 @@ Incluye:
 
 ### **6. Flujo de Kafka**
 Incluye:
-- Productor (`producer.py´):
-  - Envía datos de características de prendas a Kafka.
-  - Requiere el archivo CSV: caracteristicas_nodos_bg.csv.
-- Consumidor (´consumer.py´):
-   - Recibe y procesa los datos desde Kafka.
-   - Requiere los archivos:
-       - `caracteristicas_nodos_bg.csv`
-       - `grafo.pkl` 
+- Productor (`producer.py`):
+    - Envía datos de características de prendas a Kafka.
+    - Requiere el archivo CSV:
+        - `caracteristicas_nodos_bg.csv`
+- Consumidor (`consumer.py`):
+    - Recibe y procesa los datos desde Kafka.
+    - Requiere los archivos:
+        - `caracteristicas_nodos_bg.csv`
+        - `grafo.pkl` 
 
 ---
 
