@@ -55,9 +55,13 @@ En orden de ejecución:
      - `df_resultado.csv` (desde Google Drive).  
      - `combinaciones_colores.csv` (combinaciones generadas desde una aplicación Flask).  
 
-3. **`03_GNN_Grafos.ipynb`** *(Vacío por definir)*  
+3. **`03_GNN_Grafos.ipynb`**
+   - Jupyter notebook trabajado en Google Colab para optimizar recursos.
+   - Entrada:
+      - `grafo.pkl` (desde Google Drive).
 
-4. **`04_WEB_UX.ipynb`** *(Vacío por definir)*  
+5. **`04_WEB_UX.ipynb`**
+   - Carga los datos desde `page_views.csv`.
 
 ---
 
