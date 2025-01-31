@@ -88,7 +88,7 @@ Incluye:
 ---
 
 ### **6. Flujo de Kafka**
-Incluye:
+Incluye (ejecutar en orden):
 - Productor (`producer.py`):
     - Envía datos de características de prendas a Kafka.
     - Requiere el archivo CSV:
